@@ -15,6 +15,10 @@ import "./lib/localization/i18n"
 
 import App from "./App"
 import { LanguageProvider } from "./context/LanguageContext"
+import { initBridge } from "./bridge"
+
+// Initialize WebView bridge for React Native communication
+initBridge()
 
 const getLibrary = (provider) => {
   const library = new Web3Provider(provider)

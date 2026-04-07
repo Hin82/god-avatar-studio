@@ -1,6 +1,7 @@
 import React, { Fragment, useContext, useEffect, useState } from "react"
 import * as THREE from "three"
 
+import { initBridge } from "./bridge"
 import { LanguageContext } from "./context/LanguageContext"
 import { SceneContext } from "./context/SceneContext"
 import { ViewContext, ViewMode } from "./context/ViewContext"
@@ -207,7 +208,7 @@ export default function App() {
   return (
     <Fragment>
       
-      <div className="generalTitle">Character Studio</div>
+      <div className="generalTitle">Create Your GOD</div>
 
       {/* <LanguageSwitch /> */}
       <MessageWindow
