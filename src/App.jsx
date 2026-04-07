@@ -17,8 +17,7 @@ import Landing from "./pages/Landing"
 import Save from "./pages/Save"
 
 // dynamically import the manifest
-const assetImportPath = import.meta.env.VITE_ASSET_PATH + "/manifest.json"
-//const assetImportPath = "./manifest.json"
+const assetImportPath = (import.meta.env.VITE_ASSET_PATH || "./loot-assets") + "/manifest.json"
 
 const cameraDistanceOther = 6
 const centerCameraTargetOther = new THREE.Vector3(0, 0.8, 0)
