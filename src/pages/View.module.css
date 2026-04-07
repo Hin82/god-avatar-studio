@@ -9,26 +9,26 @@
   }
   
   .topLine {
-      background: rgb(0, 149, 100);
+      background: rgb(102, 51, 255);
       background: -moz-linear-gradient(
         90deg,
-        rgba(0, 149, 100, 0) 0%,
-        rgba(8, 234, 160, 1) 50%,
-        rgba(0, 149, 100, 0) 100%
+        rgba(102, 51, 255, 0) 0%,
+        rgba(247, 192, 34, 1) 50%,
+        rgba(102, 51, 255, 0) 100%
       );
       background: -webkit-linear-gradient(
         90deg,
-        rgba(0, 149, 100, 0) 0%,
-        rgba(8, 234, 160, 1) 50%,
-        rgba(0, 149, 100, 0) 100%
+        rgba(102, 51, 255, 0) 0%,
+        rgba(247, 192, 34, 1) 50%,
+        rgba(102, 51, 255, 0) 100%
       );
       background: linear-gradient(
         90deg,
-        rgba(0, 149, 100, 0) 0%,
-        rgba(8, 234, 160, 1) 50%,
-        rgba(0, 149, 100, 0) 100%
+        rgba(102, 51, 255, 0) 0%,
+        rgba(247, 192, 34, 1) 50%,
+        rgba(102, 51, 255, 0) 100%
       );
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#009564",endColorstr="#009564",GradientType=1);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6633ff",endColorstr="#6633ff",GradientType=1);
       position: absolute;
       top: 0;
       left: 0;
@@ -37,26 +37,26 @@
     }
     
     .bottomLine {
-      background: rgb(0, 149, 100);
+      background: rgb(102, 51, 255);
       background: -moz-linear-gradient(
         90deg,
-        rgba(0, 149, 100, 0) 0%,
-        rgba(8, 234, 160, 1) 50%,
-        rgba(0, 149, 100, 0) 100%
+        rgba(102, 51, 255, 0) 0%,
+        rgba(247, 192, 34, 1) 50%,
+        rgba(102, 51, 255, 0) 100%
       );
       background: -webkit-linear-gradient(
         90deg,
-        rgba(0, 149, 100, 0) 0%,
-        rgba(8, 234, 160, 1) 50%,
-        rgba(0, 149, 100, 0) 100%
+        rgba(102, 51, 255, 0) 0%,
+        rgba(247, 192, 34, 1) 50%,
+        rgba(102, 51, 255, 0) 100%
       );
       background: linear-gradient(
         90deg,
-        rgba(0, 149, 100, 0) 0%,
-        rgba(8, 234, 160, 1) 50%,
-        rgba(0, 149, 100, 0) 100%
+        rgba(102, 51, 255, 0) 0%,
+        rgba(247, 192, 34, 1) 50%,
+        rgba(102, 51, 255, 0) 100%
       );
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#009564",endColorstr="#009564",GradientType=1);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6633ff",endColorstr="#6633ff",GradientType=1);
       position: absolute;
       bottom: 0;
       left: 0;
