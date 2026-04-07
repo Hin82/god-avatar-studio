@@ -7,7 +7,7 @@
     height: -webkit-calc(100vh - 176px);
     height: calc(100vh - 176px);
     backdrop-filter: blur(22.5px);
-    background: rgba(5, 11, 14, 0.8);
+    background: rgba(10, 10, 26, 0.8);
     z-index: 1000;
     user-select: none;
   }
@@ -63,7 +63,7 @@
   }
   .dropdownBase{
     color: #5eb086 !important;
-    background-color:#1e2530 !important;
+    background-color:#0a0a1a !important;
     font-size: 12px;
     height: 30px;
     display: flex;
@@ -73,13 +73,13 @@
   }
   .dropdownControl{
     color: #63af88 !important;
-    background-color: #1e2530 !important;
+    background-color: #0a0a1a !important;
     font-size: 12px;
     height: 30px; 
   }
   .dropdownControlSmall{
     color: #63af88 !important;
-    background-color: #1e2530 !important;
+    background-color: #0a0a1a !important;
     font-size: 12px;
     height: 30px; 
     width: 120px;
@@ -88,7 +88,7 @@
     width: 60px; /* Adjust as needed */
     height: 20px;
     color: #5eb086;
-    background-color:rgba(5, 11, 14, 0.5);
+    background-color:rgba(10, 10, 26, 0.5);
     border: none;
     font-size: medium;
     font-weight: 500;
@@ -120,12 +120,12 @@
     height: 32px;
     margin: 2px;
     text-align: center;
-    outline-color: #3b434f;
+    outline-color: #2a2a5e;
     outline-width: 2px;
     outline-style: solid;
     align-items: center;
     margin-bottom: 30px;
-    background-color: #1e2530;
+    background-color: #0a0a1a;
   }
   .left-button{
     background: url('./ui/backButton_small.png');
@@ -189,11 +189,11 @@
   .actionButton{
     margin: 30px auto;
     text-align: center;
-    outline-color: #3b434f;
+    outline-color: #2a2a5e;
     color: #d1d7df;
     outline-width: 2px;
     outline-style: solid;
-    background-color: #1e2530;
+    background-color: #0a0a1a;
     height: 30px;
     width: 80%;
     font-family: "TTSC-Bold";
@@ -220,7 +220,7 @@
     outline-width: 1px;
     width: 60px;
     outline-style: solid;
-    background-color: #1e2530;
+    background-color: #0a0a1a;
     height: 15px;
     padding: 2px 10px;
     font-family: "TTSC-Bold";

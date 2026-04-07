@@ -1,6 +1,7 @@
 import React, { Fragment, useContext, useEffect, useState } from "react"
 import * as THREE from "three"
 
+import { initBridge } from "./bridge"
 import { LanguageContext } from "./context/LanguageContext"
 import { SceneContext } from "./context/SceneContext"
 import { ViewContext, ViewMode } from "./context/ViewContext"
@@ -11,16 +12,9 @@ import MessageWindow from "./components/MessageWindow"
 import Background from "./components/Background"
 
 import Appearance from "./pages/Appearance"
-import BatchDownload from "./pages/BatchDownload"
-import BatchManifest from "./pages/BatchManifest"
-import Claim from "./pages/Claim"
 import Create from "./pages/Create"
 import Landing from "./pages/Landing"
-import Load from "./pages/Load"
-import Mint from "./pages/Mint"
-import Optimizer from "./pages/Optimizer"
 import Save from "./pages/Save"
-import Wallet from "./pages/Wallet"
 
 // dynamically import the manifest
 const assetImportPath = import.meta.env.VITE_ASSET_PATH + "/manifest.json"
@@ -142,7 +136,7 @@ export default function App() {
     setConfirmDialogCallback([callback])
   }
 
-  // map current app mode to a page
+  // map current app mode to a page (simplified — removed Web3/batch/mint pages)
   const pages = {
     [ViewMode.LANDING]: <Landing />,
     [ViewMode.APPEARANCE]: (
@@ -150,14 +144,7 @@ export default function App() {
         confirmDialog={confirmDialog}
       />
     ),
-    [ViewMode.OPTIMIZER]:<Optimizer/>,
     [ViewMode.CREATE]: <Create />,
-    [ViewMode.WALLET]: <Wallet />,
-    [ViewMode.CLAIM]: <Claim />,
-    [ViewMode.BATCHMANIFEST]: <BatchManifest />,
-    [ViewMode.BATCHDOWNLOAD]: <BatchDownload />,
-    [ViewMode.LOAD]: <Load />,
-    [ViewMode.MINT]: <Mint />,
     [ViewMode.SAVE]: <Save />,
   }
 
@@ -207,7 +194,7 @@ export default function App() {
   return (
     <Fragment>
       
-      <div className="generalTitle">Character Studio</div>
+      <div className="generalTitle">Create Your GOD</div>
 
       {/* <LanguageSwitch /> */}
       <MessageWindow

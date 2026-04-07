@@ -167,6 +167,15 @@ export async function downloadGLB(model, fileName = "", options){
   parseGLB(finalModel)
     .then((result) => {
       if (result instanceof ArrayBuffer) {
+        // If running in WebView, send via bridge instead of downloading
+        const { isInWebView, sendAvatarExported } = require("../bridge");
+        if (isInWebView()) {
+          // Capture thumbnail from canvas
+          const canvas = document.querySelector('canvas');
+          const thumbnail = canvas ? canvas.toDataURL('image/png', 0.7) : null;
+          sendAvatarExported(result, thumbnail);
+          return;
+        }
         saveArrayBuffer(result, `${downloadFileName}.glb`)
       } else {
         const output = JSON.stringify(result, null, 2)

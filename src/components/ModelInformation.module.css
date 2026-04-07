@@ -7,7 +7,7 @@
   height: -webkit-calc(100vh - 176px);
   height: calc(100vh - 176px);
   backdrop-filter: blur(22.5px);
-  background: rgba(5, 11, 14, 0.8);
+  background: rgba(10, 10, 26, 0.8);
   z-index: 1000;
   user-select: none;
   text-align: right;
@@ -48,7 +48,7 @@
   width: 60px; /* Adjust as needed */
   height: 20px;
   color: #5eb086;
-  background-color:rgba(5, 11, 14, 0.5);
+  background-color:rgba(10, 10, 26, 0.5);
   border: none;
   font-size: medium;
   font-weight: 500;
@@ -82,11 +82,11 @@
   height: 25px;
   margin: 2px;
   text-align: center;
-  outline-color: #3b434f;
+  outline-color: #2a2a5e;
   outline-width: 2px;
   outline-style: solid;
   align-items: center;
-  background-color: #1e2530;
+  background-color: #0a0a1a;
 }
 .left-button{
   background: url('./ui/backButton_small.png');
